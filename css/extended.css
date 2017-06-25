@@ -7,10 +7,7 @@
 
 .speaker-img {
 
-	display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    float: center;
+	padding-top: 50px;
 }
 
 .speaker-text {
