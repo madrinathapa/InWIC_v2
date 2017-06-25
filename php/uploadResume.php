@@ -1,3 +1,29 @@
+<?php
+    if(isset($_FILES['resumeUploadField'])) {
+
+        $UploadName = $_FILES['resumeUploadField']['name']; 
+        $UploadName = mt_rand(100000, 999999).$UploadName;
+        $UploadTmp = $_FILES['resumeUploadField']['tmp_name'];  
+        $UploadType = $_FILES['resumeUploadField']['type ']; 
+        $FileSize = $_FILES['resumeUploadField']['size']; 
+        $UploadName = preg_replace("#[^a-z0-9.]#i", "", $UploadName);
+        
+        /*if(($FileSize > 5000)){
+            
+            die("File size cannot exceed 5MB");
+            
+        }*/
+
+        if(!UploadTmp){
+            die("No file selected, please upload again");
+            
+        }
+        else{
+            move_uploaded_file($UploadTmp, "../resumes/$UploadName");
+        }   
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +35,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Become a Partner</title>
+    <title>Submit Resume</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -83,25 +109,19 @@
             <div class="col-lg-12">                    
                 
                 <div class="clearfix"></div>
-                <h2 class="section-heading">Become A Partner</h2>
-                <p class="lead">Our ability to offer an InWIC meeting annually is dependent on the support of our generous partners. The support we receive from partners helps us get the next group of young women excited about pursuing a career in computing. Silver, Gold, and Platinum partners receive complimentary registrations for one or more company representatives. These representatives may attend any and all of the conference, but most partners prefer to set up for interviews at different parts of the day. 
-                <br><br>The Career Fair provides you with an opportunity to recruit for internships and/or jobs. We offer you the ability to collect resumes in advance and during the Fair. Additional advantages for partners include meeting many candidates face-to-face, variety of candidates from multiple schools, and "interviewing" in a relaxed, informal setting. We know skilled women in computing are in short supply, so another advantage lies in finding talented female computing majors in Indiana in one central location. In previous years, attending students were enrolled at schools that include: Purdue University, Indiana University, Rose-Hulman Institute of Technology, University of Illinois at Urbana-Champaign, Indiana University - Purdue University at Indianapolis, DePauw University, and Butler University.
+                <h2 class="section-heading">Submit your Resume</h2>
+                <p class="lead">Please use the naming standard below for your filename to be uploaded:<br>LastName_FirstName_School_Resume.xxx (.doc, .docx, .pdf, .rtf are all acceptable formats)</p>
 
-                To become a partner, please do both of the following:
- 
-                <ul>
-                    <li>Send an email to inwic@indiana.edu with "Interest in being a Partner for InWIC 2017" in the subject line. Additionally, please include:
-                        <ul>
-                            <li>Details, including the name, phone number, and email address of the key contact.</li>
-                            <li>Company logo (.jpg, .png, .gif)</li>
-                            <li>Level of partnership</li>
-                        </ul>
-                    </li>
-                <li>
-                    Contact Lamara Warren to make the payment. Details about the levels of partnership and payment instructions are in the 2017 Partner Flyer.
-                </li>
-                    </ul>  
-                </p>
+                <form action="uploadResume.php" method="post" name="resumeUploadForm" id="resumeUploadForm" enctype = "multipart/form-data">
+                <label for="resumeUploadField"></label>
+                <div class="browse-btn">
+                    <input type="file" name="resumeUploadField" id="resumeUploadField">
+                </div>
+                <br><br>
+                <div class="">    
+                    <input type="submit" name="uploadBtn" id="uploadBtn" value="Upload">
+                </div>
+                </form> 
             </div>
         </div>
     </div>
