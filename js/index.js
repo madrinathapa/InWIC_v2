@@ -9,3 +9,7 @@ $('.js-scroll').on('click', function(event) {
     
   }, 400);
 });
+
+$("#submitQuest").on('click', function(event){
+	$("#questForm").show();
+});

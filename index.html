@@ -235,63 +235,58 @@ if (!$errName && !$errEmail && !$errMessage) {
 			<div class="container">
 				<h3><span style="color:#BFB4A0">PLATINUM</span></h3>
 				<div class="row">
-				  <div class="col-xs-9"><img class="img-responsive img-circle" style="width:50%" src="img/Sponsor-Logo.png"></div>
+				  <div class="col-xs-9"><img class="img-responsive img-circle" style="width:30%" src="img/Sponsor-Logo.png"></div>
 				  <div class="col-xs-3">Sponsor 1</div>
 				</div>
 				<hr>
 				<div class="row">
-				  <div class="col-xs-9"><img class="img-responsive img-circle" style="width:50%"  src="img/Sponsor-Logo.png"></div>
+				  <div class="col-xs-9"><img class="img-responsive img-circle" style="width:30%"  src="img/Sponsor-Logo.png"></div>
 				  <div class="col-xs-3">Sponsor 2</div>
 				</div>
 				<h3><span style="color:#BFB4A0">GOLD</span></h3>
 				<div class="row">
-				  <div class="col-xs-9"><img class="img-responsive img-circle" style="width:50%"  src="img/Sponsor-Logo.png"></div>
+				  <div class="col-xs-9"><img class="img-responsive img-circle" style="width:30%"  src="img/Sponsor-Logo.png"></div>
 				  <div class="col-xs-3">Sponsor 1</div>
 				</div>	
 				<hr>
 				<div class="row">
-				  <div class="col-xs-9"><img class="img-thumbnail img-responsive" style="width:50%" src="img/Sponsor-Logo.png"></div>
+				  <div class="col-xs-9"><img class="img-thumbnail img-responsive" style="width:30%" src="img/Sponsor-Logo.png"></div>
 				  <div class="col-xs-3">Sponsor 2</div>
 				</div>
 				<h3><span style="color:#BFB4A0">SILVER</span></h3>
 				<div class="row">
-				  <div class="col-xs-9"><img class="img-thumbnail img-responsive" style="width:50%"  src="img/Sponsor-Logo.png"></div>
+				  <div class="col-xs-9"><img class="img-thumbnail img-responsive" style="width:30%"  src="img/Sponsor-Logo.png"></div>
 				  <div class="col-xs-3">Sponsor 1</div>
 				</div>	
 				<hr>
 				<div class="row">
-				  <div class="col-xs-9"><img class="img-responsive img-rounded" style="width:50%"  src="img/Sponsor-Logo.png"></div>
+				  <div class="col-xs-9"><img class="img-responsive img-rounded" style="width:30%"  src="img/Sponsor-Logo.png"></div>
 				  <div class="col-xs-3">Sponsor 2</div>
 				</div>
 				<h3><span style="color:#BFB4A0">BRONZE</span></h3>
 				<div class="row">
-				  <div class="col-xs-9"><img class="img-responsive img-rounded" style="width:50%"  src="img/Sponsor-Logo.png"></div>
+				  <div class="col-xs-9"><img class="img-responsive img-rounded" style="width:30%"  src="img/Sponsor-Logo.png"></div>
 				  <div class="col-xs-3">Sponsor 1</div>
 				</div>
 				<hr>				
 				<div class="row">
-				  <div class="col-xs-9"><img class="sponsor-img" style="width:50%"  src="img/Sponsor-Logo.png"></div>
+				  <div class="col-xs-9"><img class="sponsor-img" style="width:30%"  src="img/Sponsor-Logo.png"></div>
 				  <div class="col-xs-3">Sponsor 2</div>
 				</div>
 			</div>
 	</div>
         <!-- /.container -->
-
     </div>
-    <!-- /.content-section-b -->
 
-	<a  name="contact" id="contact"></a>
-
-    <div class="content-section-a" id="contact">
+<a  name="contact" id="contact"></a>
+        <div class="banner" style="margin-top:20px;">
         <div class="container">
-            <div class="row">                
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                <h2 class="section-heading">Contact Us!</h2>
+            <h2 class="section-heading" style="margin-bottom: 20px;">Contact Us!</h2>
+            <div class="row">  
                 
                 <div class="col-md-6">
-                    <form class="form-horizontal" role="form" method="post" action="index.php">
-                        <div class="form-group">
+                    <form  id="questForm" class="form-horizontal" role="form" method="post" action="index.php" style="padding: 10px; color: black; display: none;">
+                        <div class="form-group" id="">
                             <label for="name" class="col-sm-2 control-label">Name</label>
                             <div class="col-sm-8">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
@@ -325,39 +320,19 @@ if (!$errName && !$errEmail && !$errMessage) {
                     </form> 
                 </div>
                 <div class="col-md-6">
-                    <p class="lead">Check out the full list of coordinators across various schools <a href="https://inwic.tech.purdue.edu/SchoolCoordinators.aspx" target="_blank">here.</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!--
-        <div class="banner">
-        <div class="container">
-
-            <div class="row">            
-                <div class="col-lg-6">
-                    <h2>Contact Us!</h2>
-                </div>
-                <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
                         <li>
-                            <a href="#" class="btn btn-default btn-lg">Submit a Question</a>
+                            <a id = "submitQuest" class="btn btn-default btn-lg">Submit a Question</a>
                         </li>
                         <li>
                             <a href="https://inwic.tech.purdue.edu/SchoolCoordinators.aspx" target="_blank" class="btn btn-default btn-lg">School Coordinators</a>
                         </li>
                     </ul>
                 </div>
-                
             </div>
 
-        </div>
-
-    </div>
-    -->
+    </div></div>
+    
 
     <!-- Footer -->
     <footer>
