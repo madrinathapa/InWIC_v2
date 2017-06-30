@@ -243,7 +243,13 @@ footer {
     color: white;
 }
 
+.table-header{
+	color:#CC0A6E;
+}
 
+.table-time{
+	color:#009A9A;
+}
 
 
 
