@@ -70,28 +70,28 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#"><img src="../img/logo.png"></a>
+                <a class="navbar-brand topnav" href="../index.php"><img src="../img/logo.png"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="../index.html">Home</a>
+                        <a href="../index.php">Home</a>
                     </li>
                     <li>
-                        <a href="../index.html#about">About</a>
+                        <a href="../index.php#about">About</a>
                     </li>
                     <li>
-                        <a href="../index.html#program">Program</a>
+                        <a href="../index.php#program">Program</a>
                     </li>
                     <li>
-                        <a href="../index.html#proposals">Proposals</a>
+                        <a href="../index.php#proposals">Proposals</a>
                     </li>
                     <li>
-                        <a href="../index.html#partners">Partners</a>
+                        <a href="../index.php#partners">Partners</a>
                     </li>
                     <li>
-                        <a href="../index.html#contact">Contact Us</a>
+                        <a href="../index.php#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>

@@ -1,4 +1,4 @@
-<!--
+
 <?php
     if (isset($_POST["submit"])) {
         $name = $_POST['name'];
@@ -30,14 +30,14 @@
 // If there are no errors, send the email
 if (!$errName && !$errEmail && !$errMessage) {
     if (mail ($to, $subject, $body, $from)) {
-        $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+        $result='<div class="alert alert-success">Thank you! We will be in touch</div>';
     } else {
         $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
     }
 }
     }
 ?>
--->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -298,6 +298,8 @@ if (!$errName && !$errEmail && !$errMessage) {
                 <hr class="section-heading-spacer-center">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Contact Us!</h2>
+                <p> Send your questions to inwic@indiana.edu or submit them below.</p>
+                <br>
                 
                 <ul class="list-inline">
                         <li>
@@ -343,7 +345,7 @@ if (!$errName && !$errEmail && !$errMessage) {
                         </div>
 
                         <div class="form-group">
-                            <div class="col-sm-10 col-sm-offset-2">
+                            <div class="col-sm-8 col-sm-offset-2">
                                 <?php echo $result; ?>  
                             </div>
                         </div>
