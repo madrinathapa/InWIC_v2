@@ -8,19 +8,23 @@
         $FileSize = $_FILES['resumeUploadField']['size']; 
         $UploadName = preg_replace("#[^a-z0-9.]#i", "", $UploadName);
         
-        /*if(($FileSize > 5000)){
+        if(($FileSize > 10000)){
             
-            die("File size cannot exceed 5MB");
-            
-        }*/
-
-        if(!UploadTmp){
-            die("No file selected, please upload again");
-            
+            echo "File size cannot exceed 10MB";          
         }
+
         else{
-            move_uploaded_file($UploadTmp, "../resumes/$UploadName");
-        }   
+
+            if(!UploadTmp){
+                
+                die("No file selected, please upload again");            
+            }
+
+            else{
+                
+                move_uploaded_file($UploadTmp, "../resumes/$UploadName");
+            }
+        }         
     }
 ?>
 
