@@ -97,22 +97,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#" class="js-scroll" data-scroll-to="#home">Home</a>
+                        <a class="js-scroll" data-scroll-to="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="js-scroll" data-scroll-to="#about">About</a>
+                        <a class="js-scroll" data-scroll-to="#about">About</a>
                     </li>
                     <li>
-                        <a href="#" class="js-scroll" data-scroll-to="#program">Program</a>
+                        <a class="js-scroll" data-scroll-to="#program">Program</a>
                     </li>
                     <li>
-                        <a href="#" class="js-scroll" data-scroll-to="#proposals">Proposals</a>
+                        <a class="js-scroll" data-scroll-to="#proposals">Proposals</a>
                     </li>
                     <li>
-                        <a href="#" class="js-scroll" data-scroll-to="#partners">Partners</a>
+                        <a class="js-scroll" data-scroll-to="#partners">Partners</a>
                     </li>
                     <li>
-                        <a href="#" class="js-scroll" data-scroll-to="#contact">Contact Us</a>
+                        <a class="js-scroll" data-scroll-to="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
