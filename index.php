@@ -91,28 +91,28 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#"><img src="img/logo.png"></a>
+                <a class="navbar-brand topnav" href=""><img src="img/logo.png"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="js-scroll" data-scroll-to="#home">Home</a>
+                        <a href="" class="js-scroll" data-scroll-to="#home">Home</a>
                     </li>
                     <li>
-                        <a class="js-scroll" data-scroll-to="#about">About</a>
+                        <a href="" class="js-scroll" data-scroll-to="#about">About</a>
                     </li>
                     <li>
-                        <a class="js-scroll" data-scroll-to="#program">Program</a>
+                        <a href="" class="js-scroll" data-scroll-to="#program">Program</a>
                     </li>
                     <li>
-                        <a class="js-scroll" data-scroll-to="#proposals">Proposals</a>
+                        <a href="" class="js-scroll" data-scroll-to="#proposals">Proposals</a>
                     </li>
                     <li>
-                        <a class="js-scroll" data-scroll-to="#partners">Partners</a>
+                        <a href="" class="js-scroll" data-scroll-to="#partners">Partners</a>
                     </li>
                     <li>
-                        <a class="js-scroll" data-scroll-to="#contact">Contact Us</a>
+                        <a href="" class="js-scroll" data-scroll-to="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
