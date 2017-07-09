@@ -169,7 +169,7 @@
                     <h2 class="section-heading">What is InWIC?</h2>
                     <p class="lead">The Indiana Celebration of Women in Computing (InWIC) conference is an ACM Celebrations Event that provides a low cost, regionally-tailored, small conference for women in computing. <br></p>
                     <ul class="list-unstyled">
-                        <li><a href="html/about.html">Read more</a></li>
+                        <li><a href="html/about.html">Read More</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -305,7 +305,7 @@
                 <hr class="section-heading-spacer-center">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Contact Us!</h2>
-                <p> Send your questions to inwic@indiana.edu or submit them below.</p>
+                <p> Send your questions to <a href="mailto:inwic@indiana.edu">inwic@indiana.edu</a> or submit them below.</p>
                 <br>
                 
                 <ul class="list-inline">

@@ -16,3 +16,29 @@
     font-weight: 400;
 }
 
+table {
+
+    width: 70% !important;
+}
+
+.table-header{
+
+	color:#CC0A6E;
+}
+
+.top-border {
+
+	border-top-color: #CC0A6E; 
+	border-top-style: solid;
+}
+
+.table-time{
+	color:#009A9A;
+}
+
+
+
+
+
+
+

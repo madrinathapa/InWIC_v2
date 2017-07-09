@@ -1,30 +1,57 @@
 <?php
-    if(isset($_FILES['resumeUploadField'])) {
+    if(isset($_FILES['resume'])) {
 
-        $UploadName = $_FILES['resumeUploadField']['name']; 
-        $UploadName = mt_rand(100000, 999999).$UploadName;
-        $UploadTmp = $_FILES['resumeUploadField']['tmp_name'];  
-        $UploadType = $_FILES['resumeUploadField']['type ']; 
-        $FileSize = $_FILES['resumeUploadField']['size']; 
-        $UploadName = preg_replace("#[^a-z0-9.]#i", "", $UploadName);
-        
-        //if(($FileSize > 10000)){
-            
-        //    echo "File size cannot exceed 10MB";          
-        //}
+        $file = $_FILES['resume'];
 
-        //else{
+        //File properties
+        $file_name = $file['name'];
+        $file_name = mt_rand(100000, 999999).$file_name; //added a unique random integer
+        $file_name = preg_replace("#[^a-z0-9.]#i", "", $file_name);
+        $file_tmp  = $file['tmp_name'];
+        $file_size = $file['size'];
 
-            if(!UploadTmp){
-                
-                die("No file selected, please upload again");            
+        //File Destination
+        $file_destination = "../resumes/$file_name";
+
+        //File extension
+        $file_ext = explode('.', $file_name);
+        $file_ext = strtolower(end($file_ext));
+
+        $allowed = array('doc', 'docx', 'pdf', 'rtf');
+
+        $result = "";
+
+        if($file_tmp){
+
+            if(in_array($file_ext, $allowed)) {
+
+                //Check that file size is <= 10MB 
+                if($file_size <= 10485760) {
+
+                    if(move_uploaded_file($file_tmp, $file_destination)){
+
+                        $result='<div class="alert alert-success">Your file was successfully submitted! Thank You!</div>';
+
+                    }
+                    else {
+
+                        $result='<div class="alert alert-danger">Error! Could not upload file!</div>';
+                    }                
+
+                }
+                else{
+                    $result='<div class="alert alert-danger">File sizes larger than 10MB are not allowed.</div>';
+                }
             }
-
             else{
-                
-                move_uploaded_file($UploadTmp, "../resumes/$UploadName");
+                $result='<div class="alert alert-danger">Sorry! This file extension is not allowed!</div>';
             }
-        //}         
+        
+        }
+        else {
+            $result='<div class="alert alert-info">No file was selected, please upload again.</div>';
+
+        }        
     }
 ?>
 
@@ -114,17 +141,24 @@
                 
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Submit your Resume</h2>
+
                 <p class="lead">Please use the naming standard below for your filename to be uploaded:<br>LastName_FirstName_School_Resume.xxx (.doc, .docx, .pdf, .rtf are all acceptable formats)</p>
 
                 <form action="uploadResume.php" method="post" name="resumeUploadForm" id="resumeUploadForm" enctype = "multipart/form-data">
-                <label for="resumeUploadField"></label>
+                <label for="resume"></label>
                 <div class="browse-btn">
-                    <input type="file" name="resumeUploadField" id="resumeUploadField">
+                    <input type="file" name="resume" id="resume">
                 </div>
                 <br><br>
                 <div class="">    
                     <input type="submit" name="uploadBtn" id="uploadBtn" value="Upload">
                 </div>
+
+                <div class="result">
+                    <?php echo $result; ?>
+                </div>
+                 
+
                 </form> 
             </div>
         </div>
