@@ -51,7 +51,7 @@
         else {
             $result='<div class="alert alert-info">No file was selected, please upload again.</div>';
 
-        }        
+        } 
     }
 ?>
 
