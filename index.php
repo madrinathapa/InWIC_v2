@@ -241,11 +241,25 @@
                 <hr class="section-heading-spacer-center">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Partners</h2>
-                <p class="lead">Coming Soon!</p>
+			</div>
+			<div class="row">
+                <div class="col-sm-3"></div>
+                  <div class="col-sm-3"><img class="img-responsive img-rounded" style="width: 50%;" src="img/craw.png"></div>
+                  <div class="col-sm-3"><p>Computing Research Association Women</p></div>
+                <div class="col-sm-3"></div>
+            </div>
+			<hr>
+			<div class="row">
+                <div class="col-sm-3"></div>
+                  <div class="col-sm-3"><img class="img-responsive img-rounded" style="width: 50%;" src="img/acm.png"></div>
+                  <div class="col-sm-3"><p>ACM's Women in Computing</p></div>
+                <div class="col-sm-3"></div>
+            </div>
+			<div class="row">	
                 <ul class="list-unstyled">
                     <li><a href="html/partners.html">Become A Partner</a></li>
                 </ul>
-
+			</div>
                 <!--PARTNERS TABLE-->
                 <!--
                 <h3><span style="color:#A5A083">PLATINUM</span></h3>
