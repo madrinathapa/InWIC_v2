@@ -6,7 +6,7 @@
         $message = $_POST['message'];
         $human = intval($_POST['human']);
         $from = 'InWIC Contact Form'; 
-        $to = 'pcpeters@indiana.edu'; 
+        $to = 'inwic@indiana.edu'; 
         $subject = 'Message from InWIC 2017 Contact Form ';
         
         $body ="From: $name\n E-Mail: $email\n Message:\n $message";
@@ -218,7 +218,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Call for Participation</h2>
-                    <p class="lead">InWIC invites proposals poster and lightning talks, related to your research, special projects, survival tips and solutions for unique challenges faced.</p>
+                    <p class="lead">InWIC invites proposals for posters related to your research, special projects, survival tips, or solutions to unique challenges you have faced.</p>
                     <ul class="list-unstyled">
                         <li><a href="html/submission.html">Submission Details</a></li>
                         <li><a href="html/tips.html">Presentation Tips</a></li>
@@ -248,7 +248,7 @@
                   <div class="col-sm-3"><p>Computing Research Association Women</p></div>
                 <div class="col-sm-3"></div>
             </div>
-			<hr>
+<hr>
 			<div class="row">
                 <div class="col-sm-3"></div>
                   <div class="col-sm-3"><img class="img-responsive img-rounded" style="width: 50%;" src="img/acm.png"></div>
