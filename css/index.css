@@ -92,6 +92,10 @@ h6 {
     padding-top: 10px;
 }
 
+a.hotel-link {
+    color: white;
+}
+
 .navbar-brand {
   padding: 0px;
   height: 80px;
