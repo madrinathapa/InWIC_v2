@@ -112,6 +112,9 @@
                         <a href="" class="js-scroll" data-scroll-to="#partners">Partners</a>
                     </li>
                     <li>
+                        <a href="html/career_fair.html">Career Fair</a>
+                    </li>
+                    <li>
                         <a href="" class="js-scroll" data-scroll-to="#contact">Contact Us</a>
                     </li>
                 </ul>
