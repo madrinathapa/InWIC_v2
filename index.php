@@ -144,7 +144,7 @@
                             <a class="hotel-link" target="_blank" href="https://www.ihg.com/crowneplaza/hotels/us/en/indianapolis/indap/hoteldetail?cm_mmc=GoogleMaps-_-CP-_-US-_-INDAP">Crown Plaza Indianapolis Airport,<br>2501 South High School Road,<br>Indianapolis, IN 46241</a>
                             <br><br>
                             <i>Room block pricing ends 9/26/2017</i>
-                            <br><br>
+                            <br>
                         </p>                        
                         <ul class="list-inline">
                             <li>

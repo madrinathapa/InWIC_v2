@@ -122,6 +122,9 @@
                         <a href="../#partners">Partners</a>
                     </li>
                     <li>
+                        <a href="../html/career_fair.html">Career Fair</a>
+                    </li>
+                    <li>
                         <a href="../#contact">Contact Us</a>
                     </li>
                 </ul>
