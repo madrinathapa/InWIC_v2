@@ -263,7 +263,7 @@
             </div>
 			<div class="row">	
                 <ul class="list-unstyled">
-                    <li><a href="html/partners.html">Become A Partner</a></li>
+                    <li><a class="partner-link" href="html/partners.html">Become A Partner</a></li>
                 </ul>
 			</div>
                 <!--PARTNERS TABLE-->

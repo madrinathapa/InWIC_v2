@@ -42,7 +42,7 @@ h6 {
     color: #f8f8f8;
     /*background: url(../img/intro-bg.png) no-repeat center center;
     background-image: linear-gradient(rgba(151, 45, 122, 0.3), rgba(151, 45, 122, 0.3)), url("../img/intro-bg.png");*/
-    background-image: linear-gradient(rgba(153, 51, 102, 0.3), rgba(153, 51, 102, 0.3)), url("../img/intro-bg.png");
+    background-image: linear-gradient(rgba(99,0,96, 0.3), rgba(99,0,96, 0.3)), url("../img/intro-bg.png");
     background-size: cover;
 }
 
