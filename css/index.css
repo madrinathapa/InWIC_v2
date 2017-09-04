@@ -93,7 +93,8 @@ h6 {
 }
 
 a.hotel-link {
-    color: white;
+    text-decoration: underline;
+	color: #00CED6;
 }
 
 .navbar-brand {

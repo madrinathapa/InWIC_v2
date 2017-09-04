@@ -263,7 +263,7 @@
             </div>
 			<div class="row">	
                 <ul class="list-unstyled">
-                    <li><a class="partner-link" href="html/partners.html"><h3>Become A Partner</h3></a></li>
+					<li><a class="partner-link" href="html/partners.html"><button type="button" class="btn btn-primary">Become a partner</button></a></li>
                 </ul>
 			</div>
                 <!--PARTNERS TABLE-->
