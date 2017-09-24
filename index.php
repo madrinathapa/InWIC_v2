@@ -261,6 +261,13 @@
                   <div class="col-sm-3"><p>ACM's Women in Computing</p></div>
                 <div class="col-sm-3"></div>
             </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                  <div class="col-sm-3"><img class="img-responsive img-rounded" style="width: 50%;" src="img/bluehorse.png"></div>
+                  <div class="col-sm-3"><p>Blue Horseshoe</p></div>
+                <div class="col-sm-3"></div>
+            </div>
 <br/>
 			<div class="row">	
                 <ul class="list-unstyled">
