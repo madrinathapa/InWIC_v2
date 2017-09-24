@@ -261,6 +261,7 @@
                   <div class="col-sm-3"><p>ACM's Women in Computing</p></div>
                 <div class="col-sm-3"></div>
             </div>
+<br/>
 			<div class="row">	
                 <ul class="list-unstyled">
 					<li>
