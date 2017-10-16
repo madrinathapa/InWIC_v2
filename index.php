@@ -250,6 +250,14 @@
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Partners</h2>
 			</div>
+			
+			<div class="row">
+                <div class="col-sm-3"></div>
+                  <div class="col-sm-3"><img class="img-responsive img-rounded" style="width: 50%;" src="img/microsoft.png"></div>
+                  <div class="col-sm-3"><p>Microsoft</p></div>
+                <div class="col-sm-3"></div>
+            </div>
+<hr>
 			<div class="row">
                 <div class="col-sm-3"></div>
                   <div class="col-sm-3"><img class="img-responsive img-rounded" style="width: 50%;" src="img/craw.png"></div>
